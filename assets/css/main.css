@@ -71,6 +71,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+p span {
+	color: white;
+	border-bottom: 1px solid grey;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2535,7 +2540,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					color: #833767;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3246,7 +3251,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #5e42a6;
 		}
 
 		.wrapper.stylespec {
@@ -3942,6 +3947,74 @@ input, select, textarea {
 .inner {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+}
+
+.stack {
+	display: flex;
+	align-items: center;
+	margin: 15px 0;
+}
+
+.stack h4 {
+	margin: 0;
+	font-size: 1em;
+	
+}
+
+.stack .tech {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.stack .tech span {
+	border-radius: 50%;
+	border: 1px solid lightgray;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 5px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: border 0.3s, background-color 0.3s;
+}
+
+.stack .tech span:hover {
+	border: 1px solid grey;
+	background-color: rgba(255, 255, 255, 0.45);
+
+}
+
+.stack .tech img {
+	margin: 5px;
+}
+
+section h3 {
+	display: flex;
+	margin: 0;
+}
+
+section h3 a.linker {
+	border-bottom: 1px solid white;
+	height: 32px;
+}
+
+section h3 a.linker:hover {
+	border-bottom: 1px solid grey;
+	color: rgb(192, 192, 192);
+}
+
+.links {
+	margin-left: 5px;
+}
+
+.links a {
+	margin: 0 10px;
+}
+
+.links a span {
+	font-size: 1.3em;
 }
