@@ -4018,3 +4018,8 @@ section h3 a.linker:hover {
 .links a span {
 	font-size: 1.3em;
 }
+
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+}
